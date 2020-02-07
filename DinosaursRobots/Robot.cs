@@ -20,7 +20,8 @@ namespace DinosaursRobots
             RoboPWR = 10;
             RoboAttackGunPWR = 10;
         }
-        Robot Zor = new Robot()
+        Robot Zor = new Robot();
+        Robot Frank = new Robot();
             
        
     }
