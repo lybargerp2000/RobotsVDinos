@@ -9,13 +9,13 @@ namespace DinosaursRobots
     class Battlefield
  
     {
-        int DinoScore;
-        int RoboScore;
+        int DinoHealth;
+        int RoboHealth;
         Random fight = new Random();
         public Battlefield ()
         {
-            DinoScore = 0;
-            RoboScore = 0;
+            DinoHealth = 10;
+            RoboHealth = 10;
         }
         public int Fight(int min, int max)
         {
@@ -24,6 +24,20 @@ namespace DinosaursRobots
         }
 
         public void BattleOutcome(int DinoDo, int RoboDo)
+        {
+            Console.WriteLine(DinoDo);
+            Console.WriteLine(RoboDo);
+            if (DinoDo > RoboDo)
+            {
+             RoboHealth--;
+            }
+            else if (RoboDo > DinoDo)
+            {
+             DinoHealth--;
+            }
+        }
+
+
 
     }
 }
