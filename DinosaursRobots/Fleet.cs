@@ -8,6 +8,33 @@ namespace DinosaursRobots
 {
     class Fleet
     {
-        public Robot SuperFleet;
+
+        public List<Robot> SuperFleet;
+
+        public Fleet()
+        {
+            SuperFleet = new List<Robot>();
+
+        }
+
+        public void AddRobots()
+        {
+            List<Robot> SuperFleet = new List<Robot>();
+
+            {
+
+
+                Console.WriteLine(SuperFleet);
+                Console.ReadLine();
+            }
+
+        }
+
+
+
+
+
     }
+
+
 }

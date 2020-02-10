@@ -8,6 +8,7 @@ namespace DinosaursRobots
 {
     class Herd
     {
+       
        public List<Dinosaur> SuperHerd;
 
         public Herd()
@@ -18,13 +19,18 @@ namespace DinosaursRobots
        
        public void AddDinosaurs()
         {
-           //List<Dinosaur> SuperHerd = new List<Dinosaur>();
+           List<Dinosaur> SuperHerd = new List<Dinosaur>();
 
             {
-                SuperHerd.Add(TRex);
+               
+                
+                Console.WriteLine(SuperHerd);
+                Console.ReadLine();
             }
          
         }
+
+     
        
         
         

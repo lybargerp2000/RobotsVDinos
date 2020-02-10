@@ -30,7 +30,7 @@ namespace DinosaursRobots
             DinoAttackPWR = 10;
 
 
-            //Console.WriteLine(DinoType);
+            Console.WriteLine(DinoType);
             //Console.WriteLine(DinoHealth);
             //Console.ReadLine();
 
