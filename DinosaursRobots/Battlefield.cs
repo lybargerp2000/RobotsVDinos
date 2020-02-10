@@ -14,8 +14,8 @@ namespace DinosaursRobots
         Random fight = new Random();
         public Battlefield ()
         {
-            DinoHealth = 10;
-            RoboHealth = 10;
+            DinoHealth = 30;
+            RoboHealth = 30;
         }
         public int Fight(int min, int max)
         {
@@ -23,15 +23,15 @@ namespace DinosaursRobots
             return num;
         }
 
-        public void BattleOutcome(int DinoDo, int RoboDo)
+        public void BattleOutcome(int Herd, int Fleet)
         {
-            Console.WriteLine(DinoDo);
-            Console.WriteLine(RoboDo);
-            if (DinoDo > RoboDo)
+            Console.WriteLine(Herd);
+            Console.WriteLine(Fleet);
+            if (Herd > Fleet)
             {
              RoboHealth--;
             }
-            else if (RoboDo > DinoDo)
+            else if (Fleet > Herd)
             {
              DinoHealth--;
             }
@@ -40,11 +40,11 @@ namespace DinosaursRobots
         {
             if (DinoHealth > RoboHealth)
             {
-                Console.WriteLine("Dinosaur is Winner!");
+                Console.WriteLine("Dinosaurs Win!");
             }
             else if (RoboHealth  > DinoHealth)
             {
-                Console.WriteLine("Robot is Winner!");
+                Console.WriteLine("Robots Win!");
             }
 
 
@@ -54,11 +54,11 @@ namespace DinosaursRobots
 
         public void RunBattle()
         {
-            while (DinoHealth < 0 && RoboHealth < 0)
+            while (DinoHealth > 0 && RoboHealth > 0)
             {
-                int DinoDo = Fight(1, 10);
-                int RoboDo = Fight(1, 10);
-                BattleOutcome(DinoDo, RoboDo);
+                int Herd = Fight(1, 10);
+                int Fleet = Fight(1, 10);
+                BattleOutcome(Herd, Fleet);
             }
 
 
