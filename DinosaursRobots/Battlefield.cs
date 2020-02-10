@@ -36,8 +36,37 @@ namespace DinosaursRobots
              DinoHealth--;
             }
         }
+        public void DeclareWinner()
+        {
+            if (DinoHealth > RoboHealth)
+            {
+                Console.WriteLine("Dinosaur is Winner!");
+            }
+            else if (RoboHealth  > DinoHealth)
+            {
+                Console.WriteLine("Robot is Winner!");
+            }
 
 
 
-    }
+
+        }
+
+        public void RunBattle()
+        {
+            while (DinoHealth < 0 && RoboHealth < 0)
+            {
+                int DinoDo = Fight(1, 10);
+                int RoboDo = Fight(1, 10);
+                BattleOutcome(DinoDo, RoboDo);
+            }
+
+
+
+            DeclareWinner();
+            Console.ReadLine();
+
+
+
+        }   }
 }

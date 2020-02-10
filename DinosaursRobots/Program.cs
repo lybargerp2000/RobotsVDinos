@@ -11,7 +11,7 @@ namespace DinosaursRobots
         static void Main(string[] args)
         {
             Dinosaur  myDinosaur = new Dinosaur();
-            myDinosaur.DinosaursCreations();
+            myDinosaur.DinosaurCreations();
 
             Robot myRobot = new Robot();
             myRobot.RobotCreations();
@@ -21,6 +21,9 @@ namespace DinosaursRobots
 
             Fleet myFleet = new Fleet();
             myFleet.AddRobots();
+
+            Battlefield battlefield = new Battlefield();
+            battlefield.RunBattle();
         }
     }
 }

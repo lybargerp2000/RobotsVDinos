@@ -31,8 +31,8 @@ namespace DinosaursRobots
         public void RobotCreations()
         {
             newrobot();
-            Console.WriteLine();
-            Console.ReadLine();
+            //Console.WriteLine();
+            //Console.ReadLine();
 
 
 

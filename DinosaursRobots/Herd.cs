@@ -20,12 +20,13 @@ namespace DinosaursRobots
        public void AddDinosaurs()
         {
            List<Dinosaur> SuperHerd = new List<Dinosaur>();
+           
 
             {
                
                 
-                Console.WriteLine(SuperHerd);
-                Console.ReadLine();
+                //Console.WriteLine(SuperHerd);
+                //Console.ReadLine();
             }
          
         }

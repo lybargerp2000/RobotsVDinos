@@ -24,8 +24,8 @@ namespace DinosaursRobots
             {
 
 
-                Console.WriteLine(SuperFleet);
-                Console.ReadLine();
+                //Console.WriteLine(SuperFleet);
+                //Console.ReadLine();
             }
 
         }
