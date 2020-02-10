@@ -19,6 +19,8 @@ namespace DinosaursRobots
         public void AddRobot(Robot robot)
         {
             robots.Add(robot);
+            robots.Add(robot);
+            robots.Add(robot);
         }
 
    

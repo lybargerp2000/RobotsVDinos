@@ -17,9 +17,14 @@ namespace DinosaursRobots
             myRobot.RobotCreations();
 
             Herd myHerd = new Herd();
-            myHerd.AddDinosaurs();
+            Dinosaur dinosaur = new Dinosaur();
+            myHerd.AddDinosaur(dinosaur);
+
 
             Fleet myFleet = new Fleet();
+            Robot robot = new Robot();
+            myFleet.AddRobot(robot);
+
            
 
             Battlefield battlefield = new Battlefield();

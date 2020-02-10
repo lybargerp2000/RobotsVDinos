@@ -8,5 +8,10 @@ namespace DinosaursRobots
 {
     class Weapon
     {
+        int Gun = 20;
+        int sword = 15;
+        int chainsaw = 18;
+        int pocketKnife = 5;
     }
+    
 }

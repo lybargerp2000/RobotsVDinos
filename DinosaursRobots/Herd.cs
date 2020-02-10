@@ -8,32 +8,26 @@ namespace DinosaursRobots
 {
     public class Herd
     {
-       
-       public List<Dinosaur> SuperHerd;
+
+        public List<Dinosaur> dinosaurs;
 
         public Herd()
         {
-            SuperHerd = new List<Dinosaur>();
+            dinosaurs = new List<Dinosaur>();
 
         }
-       
-       public void AddDinosaurs()
+        public void AddDinosaur(Dinosaur dinosaur)
         {
-           List<Dinosaur> SuperHerd = new List<Dinosaur>();
-           
-
-            {
-               
-                
-                //Console.WriteLine(SuperHerd);
-                //Console.ReadLine();
-            }
-         
+            dinosaurs.Add(dinosaur);
+            dinosaurs.Add(dinosaur);
+            dinosaurs.Add(dinosaur);
         }
 
-     
-       
-        
-        
+
+
+
+
+
+
     }
 }
