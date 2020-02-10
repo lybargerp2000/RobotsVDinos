@@ -20,9 +20,22 @@ namespace DinosaursRobots
             RoboPWR = 10;
             RoboAttackGunPWR = 10;
         }
-        Robot Zor = new Robot();
-        Robot Frank = new Robot();
-            
-       
+
+        public void newrobot()
+        {
+            Robot Zor = new Robot();
+            Robot Frank = new Robot();
+            Robot Keith = new Robot();
+        }
+
+        public void RobotCreations()
+        {
+            newrobot();
+            Console.WriteLine();
+            Console.ReadLine();
+
+
+
+        }
     }
 }

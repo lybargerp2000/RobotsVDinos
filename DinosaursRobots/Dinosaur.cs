@@ -12,6 +12,7 @@ namespace DinosaursRobots
         public int DinoHealth;
         public int DinoEnergy;
         public int DinoAttackPWR;
+
      
         public Dinosaur()
         {

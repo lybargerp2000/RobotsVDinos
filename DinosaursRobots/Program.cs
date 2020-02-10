@@ -12,8 +12,13 @@ namespace DinosaursRobots
         {
             Dinosaur  myDinosaur = new Dinosaur();
             myDinosaur.DinosaursCreations();
-            Console.WriteLine();
-            Console.ReadLine();
+
+            Robot myRobot = new Robot();
+            myRobot.RobotCreations();
+
+            Herd myHerd = new Herd();
+            myHerd.AddDinosaursHerd(); 
+
         }
     }
 }

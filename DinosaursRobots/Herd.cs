@@ -8,6 +8,25 @@ namespace DinosaursRobots
 {
     class Herd
     {
-        public Dinosaur SuperHerd;
+       public List<Dinosaur> SuperHerd;
+
+        public Herd()
+        {
+            SuperHerd = new List<Dinosaur>();
+
+        }
+       
+       public void AddDinosaurs()
+        {
+           //List<Dinosaur> SuperHerd = new List<Dinosaur>();
+
+            {
+                SuperHerd.Add(TRex);
+            }
+         
+        }
+       
+        
+        
     }
 }
