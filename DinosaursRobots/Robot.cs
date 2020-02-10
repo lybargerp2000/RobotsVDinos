@@ -15,7 +15,7 @@ namespace DinosaursRobots
 
         public Robot()
         {
-            RoboName = "Keith";
+            RoboName = "";
             RoboHealth = 10;
             RoboPWR = 10;
             RoboAttackGunPWR = 10;
