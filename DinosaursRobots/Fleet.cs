@@ -6,34 +6,22 @@ using System.Threading.Tasks;
 
 namespace DinosaursRobots
 {
-    class Fleet
+    public class Fleet
     {
 
-        public List<Robot> SuperFleet;
+        public List<Robot> robots;
 
         public Fleet()
         {
-            SuperFleet = new List<Robot>();
+            robots = new List<Robot>();
 
         }
-
-        public void AddRobots()
+        public void AddRobot(Robot robot)
         {
-            List<Robot> SuperFleet = new List<Robot>();
-
-            {
-
-
-                //Console.WriteLine(SuperFleet);
-                //Console.ReadLine();
-            }
-
+            robots.Add(robot);
         }
 
-
-
-
-
+   
     }
 
 

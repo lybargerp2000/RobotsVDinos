@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DinosaursRobots
 {
-    class Battlefield
+    public class Battlefield
  
     {
         int DinoHealth;
@@ -23,15 +23,15 @@ namespace DinosaursRobots
             return num;
         }
 
-        public void BattleOutcome(int Herd, int Fleet)
+        public void BattleOutcome(int DinoAttackPWR, int RoboAttackPWR)
         {
-            Console.WriteLine(Herd);
-            Console.WriteLine(Fleet);
-            if (Herd > Fleet)
+            Console.WriteLine(DinoAttackPWR);
+            Console.WriteLine(RoboAttackPWR);
+            if (DinoAttackPWR  > RoboAttackPWR)
             {
              RoboHealth--;
             }
-            else if (Fleet > Herd)
+            else if (RoboAttackPWR  > DinoAttackPWR)
             {
              DinoHealth--;
             }
@@ -56,9 +56,9 @@ namespace DinosaursRobots
         {
             while (DinoHealth > 0 && RoboHealth > 0)
             {
-                int Herd = Fight(1, 10);
-                int Fleet = Fight(1, 10);
-                BattleOutcome(Herd, Fleet);
+                int DinoAttackPWR = Fight(1, 10);
+                int RoboAttackPWR = Fight(1, 10);
+                BattleOutcome(DinoAttackPWR , RoboAttackPWR);
             }
 
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DinosaursRobots
 {
-    class Herd
+    public class Herd
     {
        
        public List<Dinosaur> SuperHerd;

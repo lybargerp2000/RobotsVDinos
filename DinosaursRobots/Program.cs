@@ -20,7 +20,7 @@ namespace DinosaursRobots
             myHerd.AddDinosaurs();
 
             Fleet myFleet = new Fleet();
-            myFleet.AddRobots();
+           
 
             Battlefield battlefield = new Battlefield();
             battlefield.RunBattle();

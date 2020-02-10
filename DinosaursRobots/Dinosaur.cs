@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DinosaursRobots
 {
-    class Dinosaur
+    public class Dinosaur
     {
         public string DinoType;
         public int DinoHealth;
