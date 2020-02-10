@@ -10,6 +10,10 @@ namespace DinosaursRobots
     {
         static void Main(string[] args)
         {
+            Dinosaur  myDinosaur = new Dinosaur();
+            myDinosaur.DinosaursCreations();
+            Console.WriteLine();
+            Console.ReadLine();
         }
     }
 }
